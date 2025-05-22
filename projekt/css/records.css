@@ -1,0 +1,145 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+header {
+    background-color: #00325b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+main {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+}
+
+.record-category {
+    margin-bottom: 20px;
+}
+
+.record-category h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.record-category ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.record-category li {
+    margin-bottom: 5px;
+}
+footer{
+    display: flex;
+    height: 50vh;
+    width: 100%;
+    background-color: rgb(0,33,93);
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: start;
+}
+h1, h2, h3, h4, h5{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color:white;
+    padding: 5px;
+    text-align: center;    
+}
+.sites{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+}
+.a-tag{
+    color: white;
+    font-size: large;
+    padding: 10px;
+
+}
+.pin-logo{
+    width: 32px;
+    height: 32px;
+    background-image: url(../img/Pinterest-logo.png);
+    background-size: cover;
+}
+.guinnes{
+    width: 32px;
+    height: 32px;
+    background-image: url(../img/Guinness_World_Records_logo.svg.png);
+    background-size: cover;
+}
+.uefa{
+    width:32px;
+    height: 32px;
+    background-image: url(../img/uefa-logo-svg-vector.svg);
+    background-size: cover;
+}
+.wiki{
+    width:32px;
+    height: 32px;
+    background-image: url(../img/Wikipedia_Logo_1.0.png);
+    background-size: cover;
+}
+.reddit{
+    width:32px;
+    height: 32px;
+    background-image: url(../img/reddit-logo.png);
+    background-size: cover;
+}
+.talksport{
+    width:32px;
+    height: 32px;
+    background-image: url(../img/talksport.png);
+    background-size: cover;
+
+}
+.as{
+    width:32px;
+    height: 32px;
+    background-image: url(../img/diario-as-logo-png.png);
+    background-size: cover;
+}
+.IG{
+    width:32px;
+    height: 32px;
+    background-image: url(../img/ig.png);
+    background-size: cover;
+}
+.YT{
+      width:32px;
+    height: 32px;
+    background-image: url(../img/hd-youtube-logo-png.webp);
+    background-size: cover;
+}
+.FB{
+      width:28px;
+    height: 27px;
+    background-image: url(../img/pngegg.png);
+    background-size: cover;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+    margin-bottom: 0.1rem;
+    flex-direction: row;
+    list-style-type: inherit;
+    width: 100vh;
+}

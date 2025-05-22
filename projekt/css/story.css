@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+header {
+    background-color: rgb(0, 32, 91);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.lista {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.lista li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.nav {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.fa-solid {
+    color: white;
+}
+
+/* Hamburger meny */
+.hamburger {
+    display: none;
+}
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger-icons {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    display: block;
+    position: relative;
+    margin-top: 8px;
+}
+
+.hamburger-icons::before,
+.hamburger-icons::after {
+    content: '';
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+}
+
+.hamburger-icons::before {
+    top: -8px;
+}
+
+.hamburger-icons::after {
+    top: 8px;
+}
+
+.hamburger-nav {
+    display: none;
+    list-style: none;
+    padding: 10px;
+    background-color: rgb(0, 32, 91);
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hamburger-nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+#hamburger:checked ~ .hamburger-nav {
+    display: flex;
+}
+
+/* Kortlayout */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 700px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rubrik {
+    margin-bottom: 10px;
+}
+
+/* Responsivitet */
+@media screen and (max-width: 768px) {
+    .lista {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .hamburger-menu,
+    .hamburger-nav {
+        display: none;
+    }
+}
+footer{ 
+    display: flex;
+    height: 50vh;
+    width: 100%;
+    background-color: rgb(208, 173, 127);
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: start;
+}
+h1, h2, h3, h4, h5{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color:white;
+    padding: 5px;
+    text-align: center;    
+}
+.sites{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+}
+.a-tag{
+    color: white;
+    font-size: large;
+    padding: 10px;
+
+}
+.pin-logo{
+    width: 32px;
+    height: 32px;
+    background-image: url(../img/Pinterest-logo.png);
+    background-size: cover;
+}
+.guinnes{
+    width: 32px;
+    height: 32px;
+    background-image: url(../img/Guinness_World_Records_logo.svg.png);
+    background-size: cover;
+}
+.uefa{
+    width:32px;
+    height: 32px;
+    background-image: url(../img/uefa-logo-svg-vector.svg);
+    background-size: cover;
+}
+.wiki{
+    width:32px;
+    height: 32px;
+    background-image: url(../img/Wikipedia_Logo_1.0.png);
+    background-size: cover;
+}
+.reddit{
+    width:32px;
+    height: 32px;
+    background-image: url(../img/reddit-logo.png);
+    background-size: cover;
+}
+.talksport{
+    width:32px;
+    height: 32px;
+    background-image: url(../img/talksport.png);
+    background-size: cover;
+
+}
+.as{
+    width:32px;
+    height: 32px;
+    background-image: url(../img/diario-as-logo-png.png);
+    background-size: cover;
+}
+.IG{
+    width:32px;
+    height: 32px;
+    background-image: url(../img/ig.png);
+    background-size: cover;
+}
+.YT{
+      width:32px;
+    height: 32px;
+    background-image: url(../img/hd-youtube-logo-png.webp);
+    background-size: cover;
+}
+.FB{
+      width:28px;
+    height: 27px;
+    background-image: url(../img/pngegg.png);
+    background-size: cover;
+}
